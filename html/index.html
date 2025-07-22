@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peaje Popayán - El Tambo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Peaje Popayán - El Tambo</h1>
+
+    <p id="hora"></p> <!-- Aquí se mostrará la hora actual -->
+
+    <button id="abrirPeaje">Abrir Peaje</button>
+    <button id="cerrarPeaje" disabled>Cerrar Peaje</button>
+
+    <div class="container">
+        <div class="carro">
+            <img src="../auto.jpg" id="automovil" class="carro-btn" disabled>
+            <p>Automóviles: <input type="text" id="contadorAutomovil" value="0" readonly></p>
+        </div>
+        <div class="carro">
+            <img src="../autobus.png" id="bus" class="carro-btn" disabled>
+            <p>Buses: <input type="text" id="contadorBus" value="0" readonly></p>
+        </div>
+        <div class="carro">
+            <img src="../tractomula.jpg" id="camion" class="carro-btn" disabled>
+            <p>Camiones: <input type="text" id="contadorCamion" value="0" readonly></p>
+        </div>
+    </div>
+
+    <h2>Total recaudado: $<input type="text" id="totalRecaudado" value="0" readonly></h2>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
